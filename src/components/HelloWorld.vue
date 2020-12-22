@@ -1,201 +1,58 @@
 <template>
-  <div>
-    <nav
-      class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top"
-      id="mySidebar"
-    >
-      <div class="w3-container w3-display-container w3-padding-16">
-        <i
-          onclick="w3_close()"
-          class="fa fa-remove w3-hide-large w3-button w3-display-topright"
-        ></i>
-        <h3 class="w3-wide"><b>LOGO</b></h3>
-      </div>
-      <div
-        class="w3-padding-64 w3-large w3-text-grey"
-        style="font-weight: bold"
-      >
-        <a href="#" class="w3-bar-item w3-button">Shirts</a>
-        <a href="#" class="w3-bar-item w3-button">Dresses</a>
-        <a
-          onclick="myAccFunc()"
-          href="javascript:void(0)"
-          class="w3-button w3-block w3-white w3-left-align"
-          id="myBtn"
-          >Jeans <i class="fa fa-caret-down"></i>
-        </a>
-        <div
-          id="demoAcc"
-          class="w3-bar-block w3-hide w3-padding-large w3-medium"
-        >
-          <a href="#" class="w3-bar-item w3-button w3-light-grey"
-            ><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a
-          >
-          <a href="#" class="w3-bar-item w3-button">Relaxed</a>
-          <a href="#" class="w3-bar-item w3-button">Bootcut</a>
-          <a href="#" class="w3-bar-item w3-button">Straight</a>
-        </div>
-        <a href="#" class="w3-bar-item w3-button">Jackets</a>
-        <a href="#" class="w3-bar-item w3-button">Gymwear</a>
-        <a href="#" class="w3-bar-item w3-button">Blazers</a>
-        <a href="#" class="w3-bar-item w3-button">Shoes</a>
-      </div>
-      <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a>
-      <a
-        href="javascript:void(0)"
-        class="w3-bar-item w3-button w3-padding"
-        onclick="document.getElementById('newsletter').style.display='block'"
-        >Newsletter</a
-      >
-      <a href="#footer" class="w3-bar-item w3-button w3-padding">Subscribe</a>
-    </nav>
-
-    <!-- Top menu on small screens -->
-    <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-      <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
-      <a
-        href="javascript:void(0)"
-        class="w3-bar-item w3-button w3-padding-24 w3-right"
-        onclick="w3_open()"
-        ><i class="fa fa-bars"></i
-      ></a>
-    </header>
-
-    <!-- Overlay effect when opening sidebar on small screens -->
-    <div
-      class="w3-overlay w3-hide-large"
-      onclick="w3_close()"
-      style="cursor: pointer"
-      title="close side menu"
-      id="myOverlay"
-    ></div>
-
-    <div class="w3-main" style="margin-left: 250px">
-      <!-- Push down content on small screens -->
-      <div class="w3-hide-large" style="margin-top: 83px"></div>
-
-      <!-- Top header -->
-      <header class="w3-container w3-xlarge">
-        <p class="w3-left">Jeans</p>
-        <p class="w3-right">
-          <i class="fa fa-shopping-cart w3-margin-right"></i>
-          <i class="fa fa-search"></i>
-        </p>
-      </header>
-
-      <!-- Image header -->
-      <div class="w3-display-container w3-container">
-        <img src="/w3images/jeans.jpg" alt="Jeans" style="width: 100%" />
-        <div
-          class="w3-display-topleft w3-text-white"
-          style="padding: 24px 48px"
-        >
-          <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
-          <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
-          <h1 class="w3-hide-small">COLLECTION 2016</h1>
-          <p>
-            <a
-              href="#jeans"
-              class="w3-button w3-black w3-padding-large w3-large"
-              >SHOP NOW</a
-            >
-          </p>
-        </div>
-      </div>
-
-      <div class="w3-container w3-text-grey" id="jeans">
-        <p>8 items</p>
-      </div>
-
-      <!-- Product grid -->
-      <div class="w3-row w3-grayscale">
-        <div class="w3-col l3 s6">
-          <div class="w3-container">
-            <img src="/w3images/jeans1.jpg" style="width: 100%" />
-            <p>Ripped Skinny Jeans<br /><b>$24.99</b></p>
-          </div>
-          <div class="w3-container">
-            <img src="/w3images/jeans2.jpg" style="width: 100%" />
-            <p>Mega Ripped Jeans<br /><b>$19.99</b></p>
-          </div>
-        </div>
-
-        <div class="w3-col l3 s6">
-          <div class="w3-container">
-            <div class="w3-display-container">
-              <img src="/w3images/jeans2.jpg" style="width: 100%" />
-              <span class="w3-tag w3-display-topleft">New</span>
-              <div class="w3-display-middle w3-display-hover">
-                <button class="w3-button w3-black">
-                  Buy now <i class="fa fa-shopping-cart"></i>
-                </button>
-              </div>
-            </div>
-            <p>Mega Ripped Jeans<br /><b>$19.99</b></p>
-          </div>
-          <div class="w3-container">
-            <img src="/w3images/jeans3.jpg" style="width: 100%" />
-            <p>Washed Skinny Jeans<br /><b>$20.50</b></p>
-          </div>
-        </div>
-
-        <div class="w3-col l3 s6">
-          <div class="w3-container">
-            <img src="/w3images/jeans3.jpg" style="width: 100%" />
-            <p>Washed Skinny Jeans<br /><b>$20.50</b></p>
-          </div>
-          <div class="w3-container">
-            <div class="w3-display-container">
-              <img src="/w3images/jeans4.jpg" style="width: 100%" />
-              <span class="w3-tag w3-display-topleft">Sale</span>
-              <div class="w3-display-middle w3-display-hover">
-                <button class="w3-button w3-black">
-                  Buy now <i class="fa fa-shopping-cart"></i>
-                </button>
-              </div>
-            </div>
-            <p>Vintage Skinny Jeans<br /><b class="w3-text-red">$14.99</b></p>
-          </div>
-        </div>
-
-        <div class="w3-col l3 s6">
-          <div class="w3-container">
-            <img src="/w3images/jeans4.jpg" style="width: 100%" />
-            <p>Vintage Skinny Jeans<br /><b>$14.99</b></p>
-          </div>
-          <div class="w3-container">
-            <img src="/w3images/jeans1.jpg" style="width: 100%" />
-            <p>Ripped Skinny Jeans<br /><b>$24.99</b></p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Subscribe section -->
-      <div class="w3-container w3-black w3-padding-32">
-        <h1>Subscribe</h1>
-        <p>To get special offers and VIP treatment:</p>
-        <p>
-          <input
-            class="w3-input w3-border"
-            type="text"
-            placeholder="Enter e-mail"
-            style="width: 100%"
-          />
-        </p>
-        <button type="button" class="w3-button w3-red w3-margin-bottom">
-          Subscribe
-        </button>
-      </div>
-    </div>
+  <div class="hello">
+    <h1>{{ msg }}</h1>
+    <p>
+      For a guide and recipes on how to configure / customize this project,<br>
+      check out the
+      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
+    </p>
+    <h3>Installed CLI Plugins</h3>
+    <ul>
+      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
+      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
+    </ul>
+    <h3>Essential Links</h3>
+    <ul>
+      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
+      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
+      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
+      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
+      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
+    </ul>
+    <h3>Ecosystem</h3>
+    <ul>
+      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
+      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
+      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
+      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
+      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
+    </ul>
   </div>
 </template>
 
 <script>
 export default {
-  name: "HelloWorld",
-};
+  name: 'HelloWorld',
+  props: {
+    msg: String
+  }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
+<style scoped>
+h3 {
+  margin: 40px 0 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #42b983;
+}
 </style>

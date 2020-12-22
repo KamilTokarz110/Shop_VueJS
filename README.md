@@ -1,4 +1,4 @@
-# practice_store
+# test
 
 ## Project setup
 ```
