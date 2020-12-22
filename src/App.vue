@@ -1,15 +1,18 @@
 <template>
   <div id="app">
     <SideBar />
+    <Home />
   </div>
 </template>
 
 <script>
 import SideBar from "./components/SideBar";
+import Home from "./components/Home";
 export default {
   name: "App",
   components: {
     SideBar,
+    Home,
   },
 };
 </script>
