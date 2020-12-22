@@ -1,5 +1,6 @@
 <template>
   <!-- Sidebar/menu -->
+
   <nav
     class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top"
     style="z-index: 3; width: 250px"
@@ -56,6 +57,15 @@
       ><i class="fa fa-bars"></i
     ></a>
   </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div
+    class="w3-overlay w3-hide-large"
+    onclick="w3_close()"
+    style="cursor: pointer"
+    title="close side menu"
+    id="myOverlay"
+  ></div>
 </template>
 <script>
 export default {};
