@@ -1,27 +1,35 @@
 <template>
   <div id="app">
-    <SideBar />
+    <!-- <SideBar />
     <Home />
     <Subscribe />
     <Footer />
     <Newsletter />
+    <Item /> -->
+    <ul>
+      <li><router-link to="/">Home</router-link></li>
+    </ul>
+    <router-view />
+    <!-- <router-view></router-view> -->
   </div>
 </template>
 
 <script>
-import SideBar from "./components/SideBar";
-import Home from "./components/Home";
-import Subscribe from "./components/Subscribe";
-import Footer from "./components/Footer";
-import Newsletter from "./components/Newsletter";
+// import SideBar from "./components/SideBar";
+// import Home from "./components/Home";
+// import Subscribe from "./components/Subscribe";
+// import Footer from "./components/Footer";
+// import Newsletter from "./components/Newsletter";
+// import Item from "./components/Item";
 export default {
   name: "App",
   components: {
-    SideBar,
-    Home,
-    Subscribe,
-    Footer,
-    Newsletter,
+    // SideBar,
+    // Home,
+    // Subscribe,
+    // Footer,
+    // Newsletter,
+    // Item,
   },
 };
 </script>
