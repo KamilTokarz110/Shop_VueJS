@@ -7,7 +7,7 @@
     <Newsletter />
     <Item /> -->
     <ul>
-      <li><router-link to="/">Home</router-link></li>
+      <li><router-link to="/Item">Home</router-link></li>
     </ul>
     <router-view />
     <!-- <router-view></router-view> -->
