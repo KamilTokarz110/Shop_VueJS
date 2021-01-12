@@ -3,11 +3,12 @@ import { createWebHistory, createRouter } from "vue-router";
 // import Router from 'vue-router'
 
 import SideBar from "../components/SideBar.vue"
-import Home from "../components/Home.vue"
+import Home from "../pages/Home.vue"
 import Subscribe from "../components/Subscribe.vue"
 import Footer from "../components/Footer.vue"
 import Newsletter from "../components/Newsletter.vue"
 import Item from "../components/Item.vue"
+import Product from "../pages/Product.vue"
 
 
 const routes = [
@@ -16,6 +17,13 @@ const routes = [
                         path: '/',
                         component: Home,
                         name: 'home'
+                    },
+                    {
+        
+                        path: '/product/:id',
+                        component: Product,
+                        name: 'product',
+                        props: true
                     },
                     {
                         path: '/side-bar',

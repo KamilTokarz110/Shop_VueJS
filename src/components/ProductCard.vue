@@ -11,7 +11,11 @@
             </button>
           </div>
         </div>
-        <p>Mega Ripped Jeans<br /><b>$19.99</b></p>
+        <p>
+          <router-link :to="{ name: 'product', params: { id: 23 } }"
+            >Ripped Jeans</router-link
+          ><br /><b>$19.99</b>
+        </p>
       </div>
     </div>
   </div>

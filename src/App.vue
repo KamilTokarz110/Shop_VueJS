@@ -10,6 +10,7 @@
       <li><router-link to="/">Home</router-link></li>
     </ul>
     <Header />
+
     <router-view />
     <!-- <router-view></router-view> -->
   </div>
@@ -23,6 +24,7 @@
 // import Newsletter from "./components/Newsletter";
 // import Item from "./components/Item";
 import Header from "./components/Header";
+
 export default {
   name: "App",
   components: {
