@@ -27,20 +27,24 @@
           style="width: 200px"
         >
           <p>
-            <a href="#">Product 1</a> <span class="price">$15</span>
-            <span class="remove">Remove</span>
+            <a href="#">Product 1</a> <span class="quantity">1 x</span>
+            <span class="price">$15</span>
+            <a href="#" class="remove">Remove</a>
           </p>
           <p>
-            <a href="#">Product 2</a> <span class="price">$5</span>
-            <span class="remove">Remove</span>
+            <a href="#">Product 2</a> <span class="quantity">1 x</span
+            ><span class="price">$5</span>
+            <a href="#" class="remove">Remove</a>
           </p>
           <p>
-            <a href="#">Product 3</a> <span class="price">$8</span>
-            <span class="remove">Remove</span>
+            <a href="#">Product 3</a><span class="quantity">1 x</span>
+            <span class="price">$8</span>
+            <a href="#" class="remove">Remove</a>
           </p>
           <p>
-            <a href="#">Product 4</a> <span class="price">$2</span>
-            <span class="remove">Remove</span>
+            <a href="#">Product 4</a> <span class="quantity">1 x</span
+            ><span class="price">$2</span>
+            <a href="#" class="remove">Remove</a>
           </p>
           <hr />
           <p>
@@ -52,10 +56,20 @@
   </div>
 </template>
 <style>
+.quantity {
+  padding: 5px;
+}
 .remove {
-  padding: 10px;
-  display: block;
+  border: 1px solid black;
+  border-radius: 5%;
+  /* padding: 2px; */
+  display: inline-block;
   cursor: pointer;
-  width: 100%;
+  width: 40%;
+  text-decoration: none;
+  text-align: center;
+  background-color: black;
+  margin: 5px 0px;
+  color: white;
 }
 </style>
