@@ -7,8 +7,9 @@
     <Newsletter />
     <Item /> -->
     <ul>
-      <li><router-link to="/Item">Home</router-link></li>
+      <li><router-link to="/">Home</router-link></li>
     </ul>
+    <Header />
     <router-view />
     <!-- <router-view></router-view> -->
   </div>
@@ -21,9 +22,11 @@
 // import Footer from "./components/Footer";
 // import Newsletter from "./components/Newsletter";
 // import Item from "./components/Item";
+import Header from "./components/Header";
 export default {
   name: "App",
   components: {
+    Header,
     // SideBar,
     // Home,
     // Subscribe,
