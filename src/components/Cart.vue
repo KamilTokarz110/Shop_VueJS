@@ -14,7 +14,7 @@
     </div> -->
 
     <div class="w3-right w3-dropdown-hover">
-      <div class="container">
+      <div class="container" style="font-size: 1.1rem">
         <h4 style="padding: 0px 5px">
           Cart
           <span class="price" style="color: black">
@@ -22,11 +22,26 @@
             <b style="padding: 10px 5px">4</b>
           </span>
         </h4>
-        <div class="w3-dropdown-content w3-bar-block w3-border">
-          <p><a href="#">Product 1</a> <span class="price">$15</span></p>
-          <p><a href="#">Product 2</a> <span class="price">$5</span></p>
-          <p><a href="#">Product 3</a> <span class="price">$8</span></p>
-          <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+        <div
+          class="w3-dropdown-content w3-bar-block w3-border"
+          style="width: 200px"
+        >
+          <p>
+            <a href="#">Product 1</a> <span class="price">$15</span>
+            <span class="remove">Remove</span>
+          </p>
+          <p>
+            <a href="#">Product 2</a> <span class="price">$5</span>
+            <span class="remove">Remove</span>
+          </p>
+          <p>
+            <a href="#">Product 3</a> <span class="price">$8</span>
+            <span class="remove">Remove</span>
+          </p>
+          <p>
+            <a href="#">Product 4</a> <span class="price">$2</span>
+            <span class="remove">Remove</span>
+          </p>
           <hr />
           <p>
             Total <span class="price" style="color: black"><b>$30</b></span>
@@ -36,3 +51,11 @@
     </div>
   </div>
 </template>
+<style>
+.remove {
+  padding: 10px;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+}
+</style>
