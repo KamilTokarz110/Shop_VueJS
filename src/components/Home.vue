@@ -88,12 +88,8 @@
       </div>
     </div>
 
-    <div class="w3-container w3-text-grey" id="jeans">
-      <p>8 items</p>
-    </div>
-
     <!-- Product grid -->
-    <ProductList />
+    <product-list />
 
     <!-- Subscribe section -->
     <div class="w3-container w3-black w3-padding-32">
